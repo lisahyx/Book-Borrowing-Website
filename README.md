@@ -1,4 +1,4 @@
-# BookSwamp
+# Book Borrowing Website
 ## Description
 - This repository contains the source code for a functional website interface that interacts with a pre-determined given dataset in a MySQL database. The Front-End interface was made using pure HTML and CSS, whilst the back-end interaction is made using purely using PHP. This website assignment is for the COMP1044 Databases and Interface Coursework 2, for Group 4.
 
