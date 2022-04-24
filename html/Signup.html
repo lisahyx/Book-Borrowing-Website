@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>BookSwamp Semenyih - Register</title>
+    <link rel="icon" href="../img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/pc.css" media="screen and (min-width: 900px)">
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css" media="screen and (max-width: 900px)">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <ul>
+                        <li><a href="../index.html"><img src="../img/logo.png" alt="title" class="logostyle"></a></li>
+                    </ul>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="../dashboard.php">Library</a></li>
+                        <li><a href="../php/load.php?q=register">Register</a></li>
+                        <li><a href="../php/load.php?q=login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <h1 align="center">Sign Up</h1>
+
+    <div class="centersignup" align="center">
+        <form id="signup" action="../php/php-action/register-action.php" method="post">
+           <ul>
+                <li class="listyle11">
+                    <input type="text" name="owa" class="input7" placeholder="OWA" required>
+                </li><br>
+                
+                <li class="listyle11">
+                    <input type="text" name="firstname" class="input7" placeholder="First Name" required>
+                </li><br>
+                
+                <li class="listyle11">
+                    <input type="text" name="lastname" class="input7" placeholder="Last Name" required>
+                </li><br>   
+                
+                <li class="listyle11">
+                    <input type="password" name="password" class="input7" placeholder="Password" required>
+                </li><br>  
+                
+                <li class="listyle11">
+		            <input type="address" name="address" class="input7" placeholder="Address" required>
+                </li><br> 
+                
+                <li class="listyle11">
+                    <input type="number" name="contact" class="input7" placeholder="Contact Number" required>
+                </li><br>                 
+
+		        <li class="listyle12">
+		            <label for="gender"><b>Gender</b></label><br>
+                </li>
+
+                <li class="listyle13">
+  	            <label for="male">Male</label><nobr>
+                    <input type="radio" id="male" name="gender" value="male" checked="checked">
+                </li>
+                
+                <li class="listyle14">
+  	            <label for="female">Female</label><nobr>
+                    <input type="radio" id="female" name="gender" value="female">
+                </li><br>
+
+		        <li class="listyle12">
+		            <label for="type"><b>Type</b></label><br>
+                </li>
+
+                <li class="listyle15">
+                    <select name="account_type" id="type" onchange="disableyear('yearStudentSelect', this)">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                </li>
+
+                <script>
+                    function disableyear(divID, element) {
+                            document.getElementById(divID).style.display = element.value == 'student' ? 'block' : 'none';
+                        }
+                </script>
+
+		        <div id="yearStudentSelect">
+                    <li class="listyle12">
+                        <label for="year"><b>Year</b></label><br>
+                    </li>
+    
+                    <li class="listyle13">
+                          <label for="first">First</label><nobr>
+                        <input type="radio" id="first" name="year" value="first" checked><br>
+                    </li>
+                    
+                    <li class="listyle14">
+                        <label for="second">Second</label><nobr>
+                        <input type="radio" id="second" name="year" value="second"><br>
+                    </li><br>
+    
+                    <li class="listyle13">
+                          <label for="third">Third</label><nobr>
+                        <input type="radio" id="third" name="year" value="third">
+                    </li><br>
+    
+                    <li class="listyle14">
+                          <label for="fourth">Fourth</label><nobr>
+                        <input type="radio" id="fourth" name="year" value="fourth">
+                    </li><br>  
+                </div>             
+
+            </ul>
+            <button type="submit" name="register">Sign Up</button>
+        </form>
+    </div>
+	<div class="padding"></padding>
+</body>
+
