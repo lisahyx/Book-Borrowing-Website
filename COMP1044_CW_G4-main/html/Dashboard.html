@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>BookSwap</title>
+	<link rel="stylesheet" href="../css/Dashboard.css" media="screen and (min-width: 900px)">
+	<link rel="stylesheet" href="../css/DashboardMobile.css" media="screen and (max-width: 900px)">
+</head>
+<body>
+
+<header>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <ul>
+                        <li><a href=""><img src="../img/logo.png" alt="title" class="logostyle"></a></li>
+                        <li class="title"><a href="">BookSwap</a></li>
+                    </ul>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="">Add Book</a></li>
+                        <li><a href="">Library</a></li>
+                        <li><a href="">Subscribe</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+            </div>
+        </nav>
+</header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("mainListDiv");
+			if (x.style.display === "block") {
+			x.style.display = "none";
+			} else {
+			x.style.display = "block";
+			}
+		}
+	</script>
+	<script src="JS.js"></script>
+
+	<div class="border">
+		<h1 class="subheader"> Good Morning! </h1>
+		<br><br><br><br>
+		<div class="whiteborder">
+			<br>
+			<h2 class="wtl"> My books </h2>
+			<h2 class="wtll" style="color:gray;">(None. <a href="" style="color:purple;"> Donate some books</a>  now)</h2>
+			<h2 class="wl"> Library </h2>
+			<div class="header2">
+				<form action="/action_page.php">
+					<select name="" id="" style="width: 50px;">
+						<option value="">All categories</option>
+						<option value="">?</option>
+					</select>
+				</form>
+				<div class="f2">
+					<ul class="navlink">
+						<li>
+							<form class="example" action="/action_page.php" style="margin:auto;max-width:200px">
+							<input type="text" placeholder="Search book or ISBN..." name="search"></form>
+						</li>
+					</ul>
+				</div>
+			</div> <!--header-->
+			<br>
+			
+			<br>
+			
+			<div class="cyanborder">
+				<h2 class="ctl"> Natural Resources <span class="gray"> by Robin Kerrod </span></h2>
+				<h2 class="cfr"> Status: New <span class="red"> Booked </span></h2>
+			</div> <!-- Cyanborder -->
+			
+			<br>
+			
+			<div class="cyanborder">
+				<h2 class="ctl"> Natural Resources <span class="gray"> by Robin Kerrod </span></h2>
+				<h2 class="cfr"> Status: New <span class="green"> Avaliable </span></h2>
+			</div> <!-- Cyanborder -->
+			
+			<br>
+			
+			<div class="cyanborder">
+				<h2 class="ctl"> Natural Resources <span class="gray"> by Robin Kerrod </span></h2>
+				<h2 class="cfr"> Status: New <span class="green"> Avaliable </span></h2>
+			</div> <!-- Cyanborder -->
+			
+			<br>
+			
+			<div class="cyanborder">
+				<h2 class="ctl"> Natural Resources <span class="gray"> by Robin Kerrod </span></h2>
+				<h2 class="cfr"> Status: New <span class="green"> Avaliable </span></h2>
+			</div> <!-- Cyanborder -->
+			
+			<br>
+			
+		</div> <!-- whiteborder -->
+	</div> <!-- border -->
+
+
+</body>
+</html>
