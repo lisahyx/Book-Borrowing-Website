@@ -4,8 +4,6 @@
 
 - The web application in this repository allows users to lend and borrow books, under their own specific user accounts. The system facilitates convenient quick book sharing between students to encourage student self-learning and collaboration. 
 
-- The web application is currently **live** over on the following site: [http://34.121.148.200/COMP1044_CW_G4/]
-    - Web application would only be hosted for the initial 4-5 months simply to show the ability of the site to be hosted on the cloud.
 ## Features
 <ul>
     <li>Create Account</li>
@@ -26,6 +24,10 @@ This project was built using HTML/CSS and uses the following technologies:
     <li>PHP - For server side scripting</li>
     <li>SQL - For database management</li>
 </ul>
+
+##Admin Login
+Username: hcyjs1
+Password: Hcyjs1!
 
 ## Group Members
 - 20310915 Mirza Hizriyan
