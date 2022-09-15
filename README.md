@@ -25,9 +25,9 @@ This project was built using HTML/CSS and uses the following technologies:
     <li>SQL - For database management</li>
 </ul>
 
-##Admin Login
-Username: hcyjs1
-Password: Hcyjs1!
+## Admin Login
+Username: hcyjs1  
+Password: Hcyjs1!  
 
 ## Group Members
 - 20310915 Mirza Hizriyan
